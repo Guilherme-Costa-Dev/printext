@@ -1,0 +1,13 @@
+[package]
+name = "printext"
+version = "0.1.0"
+edition = "2024"
+authors = ["Guilherme Costa <guilhermecosta030409@gmail.com>"]
+description = "CLI tool to print an area and copy its text"
+license = "MIT"
+repository = "https://github.com/seu-usuario/printext"
+keywords = ["ocr", "hyprland", "wayland", "tesseract", "screenshot"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+leptess = "0.14"
