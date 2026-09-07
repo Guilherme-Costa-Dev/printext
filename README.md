@@ -54,6 +54,6 @@ printext spa       # Spanish
 printext por+eng   # Portuguese and English combined
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
