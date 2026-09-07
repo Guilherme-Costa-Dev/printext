@@ -17,7 +17,7 @@ Since this tool integrates closely with your system environment, you need to hav
 - **hyprshot:** For capturing the screen (requires `grim` and `slurp`).
 - **wl-clipboard:** Specifically `wl-copy` to handle the clipboard data.
 - **tesseract:** The core OCR engine.
-- **tesseract language data:** e.g., `tesseract-data-eng` (English). You may need to install other language data if you would like to pass it as an argument.
+- **tesseract language data:** e.g., `tesseract-data-eng` (English). You may need to install other language data if you would like to use it as an argument.
 - **leptonica:** Required by the `leptess` Rust crate.
 
 ### Arch Linux Install
