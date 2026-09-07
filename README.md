@@ -30,7 +30,7 @@ sudo pacman -S rust hyprshot grim slurp wl-clipboard tesseract tesseract-data-en
 Clone the repository and install it globally via Cargo:
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/printext.git](https://github.com/YOUR_USERNAME/printext.git)
+git clone https://github.com/Guilherme-Costa-Dev/printext.git
 cd printext
 cargo install --path .
 ```
