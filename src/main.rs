@@ -3,7 +3,8 @@ use std::env;
 use std::process::Command;
 
 fn main() {
-    let lang = env::args().nth(1).unwrap_or_else(|| "eng".to_string());
+    let lang = env::args().nth(1).unwrap_or("eng".to_string());
+
     let output = Command::new("hyprshot")
         .args(["-m", "region", "--raw"])
         .output()
@@ -16,9 +17,7 @@ fn main() {
         return;
     }
 
-    let mut ocr = LepTess::new(None, &lang).unwrap_or_else(|err| {
-        panic!("Failed to initialize Tesseract with lang '{lang}': {err}");
-    });
+    let mut ocr = LepTess::new(None, &lang).expect("Failed to initialize OCR");
 
     ocr.set_image_from_mem(&img)
         .expect("Failed to read from memory and set img to ocr");
